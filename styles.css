@@ -1,0 +1,170 @@
+/* Typography */
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 3rem;
+}
+
+/* h elements style */
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 5rem;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+/* paragraph element styling */
+p {
+    font-weight: 300;
+    line-height: 2rem;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Layout */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* display flex */
+.flex {
+    display: flex;
+    gap: 32px;
+}
+
+#features>div {
+    flex: auto;
+}
+
+img {
+    max-height: 500px;
+    width: auto;
+}
+
+main section {
+    padding: 60px 20px 0 20px;
+}
+
+
+/* Table Styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    color: #666666;
+}
+
+/* table head head and table data element styling  */
+th,
+td {
+    padding: 8px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #55dab2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #0f0f0f;
+    border-color: #0f0f0f;
+}
+
+/* Zebra Striped Pattern for Playlist Table */
+tbody tr:nth-child(even) {
+    border: 1px solid #0f0f0f;
+    background-color: #1db954;
+}
+
+/* Link Styling */
+
+a {
+    color: #57008a;
+    text-decoration: none;
+    font-weight: 700;
+    transition: text-decoration 0.3s ease;
+}
+
+a:hover {
+    text-decoration: double;
+}
+
+/* Button Styling */
+
+nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 100px;
+    margin-block-end: auto;
+    border: 1px solid #0f0f0f;
+    background-color: #1db954;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav a:hover {
+    background-color: #0f993c;
+}
+
+/* List Styling */
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li::before {
+    content: '\2022';
+    margin-right: 8px;
+    color: #1db954;
+}
+
+ol li {
+    counter-increment: step-counter;
+}
+
+ol li::before {
+    content: counter(step-counter) '.';
+    margin-right: 8px;
+    color: #1db954;
+}
+
+/* footer styling */
+footer {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 8px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
